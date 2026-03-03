@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    nav .mobile {
+        display: block;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+}

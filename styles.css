@@ -38,6 +38,16 @@ body {
     padding-right: 5%;
 }
 
+nav .logo {
+    height: 100%;
+    justify-content: center;
+    background: #fff;
+}
+
+nav .logo img {
+    height: inherit;
+}
+
 nav .nav-items {
     width: 50%;
     display: flex;
