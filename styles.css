@@ -130,6 +130,47 @@ nav .mobile {
     left: 0;
 }
 
+.floating-contact {
+    text-decoration: none;
+    color: #fff;
+    background-color:rgb(240, 87, 16);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1;
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 5%;
+    top: 75%;
+    z-index: 500;
+    box-shadow: 5px 5px 5px rgba(0, 0 , 0, 1);
+}
+
+.floating-contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 5px 5px 5px rgba(0, 0 , 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 5px 5px 5px rgba(0, 0 , 0, 0.4);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 5px 5px 5px rgba(0, 0 , 0, 0.2);
+    }
+
+}
+
 .services {
     width: 100%;
     padding-top: 5rem;
@@ -157,6 +198,7 @@ nav .mobile {
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
 }
 
 .service-cards .card .card-text {
