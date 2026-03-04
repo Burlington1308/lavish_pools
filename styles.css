@@ -11,6 +11,7 @@
 
 html {
     overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 body {
@@ -126,6 +127,88 @@ nav .mobile {
 
 .overlay a:hover::before {
     /*background-color: #fff;*/
+    left: 0;
+}
+
+.services {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.service-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.service-cards .card {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.service-cards .card img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 10px 0 0 10px;
+}
+
+.service-cards .card .card-text {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+
+.service-cards .card .card-text h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.service-cards .card .card-text p {
+    text-align: center;
+}
+
+.service-cards .card .card-text a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(16, 176, 240);
+    margin-top: 1rem;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0 , 0, 0.3);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-cards .card .card-text a::before {
+    content: "See more";
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16, 176, 150);
+    color: #000;
+    transition: left 0.5s ease;
+    z-index: 10;
+}
+
+.service-cards .card .card-text a:hover::before {
     left: 0;
 }
 
