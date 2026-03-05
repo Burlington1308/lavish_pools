@@ -1,0 +1,12 @@
+body {
+    background: url('images/Lavish-logo.png') no-repeat center center;
+}
+
+.hero {
+    background: transparent;
+    height: 100vh;
+}
+
+.hero .overlay {
+    height: calc(100vh - 70px);
+}
