@@ -1,0 +1,74 @@
+body {
+    background: url('images/IMG-20260302-WA0025.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.hero {
+    background: url('images/IMG-20260302-WA0034.jpg') no-repeat center center/cover;
+}
+
+.main {
+    width: 100%;
+    padding-top: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgba(34, 32, 32, 0.2);
+    padding-bottom: 3vh;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    padding: 5%;
+    background: #333;
+    color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.main .process {
+    width: 60%;
+    margin-left: auto;
+    background: #f2f2f2;
+    opacity: 1;
+    margin-right: 10%;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.process ul {
+    padding: auto;
+}
+
+.process ul li {
+    line-height: 1.6;
+    padding-bottom: 1rem;
+}
+
+.faqs {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 2vh;
+
+}
+
+.faqs h1 {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.faqs .faq-item {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vh;
+    background: #727171;
+    margin-top: 2vh;
+    border-radius: 10px;
+    text-align: center;
+}
